@@ -2,7 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import { UserInfo, Booking, AvailabilityConfig, HangoutStatus, RecurringTimeSlot, BlockedSlot, WaitlistEntry } from './src/types.js';
 
-const DB_DIR = path.resolve(process.cwd(), 'data');
+const DB_DIR = process.env.VERCEL
+  ? '/tmp/data'
+  : path.resolve(process.cwd(), 'data');
 const DB_FILE = path.join(DB_DIR, 'db.json');
 
 // Memory storage cache

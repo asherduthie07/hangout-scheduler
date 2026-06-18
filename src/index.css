@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #FAF9F6;              /* Soft warm sand/alabaster */
+  --bg-card: #FFFFFF;              /* Clean white cards */
+  --bg-inner: #F3F0EA;             /* Neutral warm secondary background */
+  --border-color: rgba(60, 55, 50, 0.12); /* Subtle warm boundary lines */
+  --text-primary: #1F1D1A;         /* Deep rich charcoal with warmth */
+  --text-secondary: #5C5852;       /* Soft slate-brown */
+  --accent-primary: #1F423C;       /* Elegant deep spruce/sage */
+  --accent-hover: #122824;         /* Darkest spruce */
+  --accent-text: #FFFFFF;          /* Light contrast text */
+  --accent-light: #EDF3F1;         /* Fresh spruce-sage tint */
+  --accent-accent: #B27E36;        /* Warm antique bronze */
+  --accent-focus: rgba(31, 66, 60, 0.12);
+}
+
+.dark-theme {
+  --bg-main: #141311;              /* Cozy warm dark-tea charcoal */
+  --bg-card: #1D1C19;              /* Smooth warm charcoal */
+  --bg-inner: #252421;             /* Neutral dark stone input panels */
+  --border-color: rgba(230, 220, 210, 0.08); /* Faint ambient light border */
+  --text-primary: #F5F3EF;         /* Soft warm porcelain cream */
+  --text-secondary: #A39E95;       /* Warm oat-gray */
+  --accent-primary: #94B5A6;       /* Radiant muted jade/sage */
+  --accent-hover: #AECABA;         /* Muted brighter jade */
+  --accent-text: #141311;          /* Dark contrast text */
+  --accent-light: #20312B;         /* Soft dark evergreen glow */
+  --accent-accent: #DCAC6F;        /* Soft sand-gold / antique bronze */
+  --accent-focus: rgba(148, 181, 166, 0.12);
+}
+
+@theme {
+  --color-bg-main: var(--bg-main);
+  --color-bg-card: var(--bg-card);
+  --color-bg-inner: var(--bg-inner);
+  --color-border-custom: var(--border-color);
+  --color-text-main: var(--text-primary);
+  --color-text-muted: var(--text-secondary);
+  --color-accent-main: var(--accent-primary);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-text: var(--accent-text);
+  --color-accent-soft: var(--accent-light);
+  --color-accent-bronze: var(--accent-accent);
+}

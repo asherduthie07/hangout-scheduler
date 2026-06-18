@@ -1,0 +1,6 @@
+{
+  "name": "Hangout Scheduler",
+  "description": "A personal calendar coordination tool for scheduling hangouts between a host and friends, with dynamic flexible times and smart notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
